@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/loops_return/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/summary/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/summary/src/allocation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/slice/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/loops/target" />
       <excludeFolder url="file://$MODULE_DIR$/loops/target" />
@@ -16,6 +17,7 @@
       <excludeFolder url="file://$MODULE_DIR$/summary/src/allocation/target" />
       <excludeFolder url="file://$MODULE_DIR$/allocation/target" />
       <excludeFolder url="file://$MODULE_DIR$/loops_return/target" />
+      <excludeFolder url="file://$MODULE_DIR$/slice/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
