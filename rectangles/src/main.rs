@@ -5,6 +5,13 @@ struct Rectangle {
 }
 
 impl Rectangle {
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
+
     fn area(&self) -> u32 {
         &self.width * &self.height
     }
@@ -32,4 +39,6 @@ fn main() {
 
     dbg!(rect.can_hold(&rect2));
     dbg!(rect2.can_hold(&rect));
+
+    dbg!(Rectangle::square(10));
 }
