@@ -5,8 +5,10 @@ struct Rectangle {
 }
 
 fn main() {
+    let scale = 2;
+
     let rect = Rectangle {
-        width: 30,
+        width: dbg!(30 * scale),
         height: 50,
     };
 
