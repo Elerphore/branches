@@ -11,10 +11,10 @@ fn main() {
 
     println!(
         "The area of the rectangle is {} square pixels.",
-        area(rect)
+        area(&rect)
     );
 }
 
-fn area(rect: Rectangle) -> u32 {
+fn area(rect: &Rectangle) -> u32 {
     rect.width * rect.height
 }
