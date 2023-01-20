@@ -1,5 +1,7 @@
 use crate::Coin::{Nickel, Penny, Dime, Quarter};
+use crate::Option::{None, Some};
 
+#[derive(Debug)]
 enum Option<T> {
     None,
     Some(T),
@@ -33,10 +35,19 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1)
+    }
+}
+
 fn main() {
     let some_number = Some(5);
     let some_char = Some('h');
     let absent_number: Option<i32> = Option::None;
 
     dbg!(value_in_cents(Quarter(UsState::Alabama)));
+
+    dbg!(plus_one(Some(1)));
 }
