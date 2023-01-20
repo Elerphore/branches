@@ -42,12 +42,25 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
     }
 }
 
+
+fn move_player(num_spaces: u8) { println!("Move player by: {}", num_spaces) }
+fn add_fancy_hat() { println!("fancy hat :) ") }
+fn remove_fancy_hat() { println!("no fancy hat :( ") }
+
 fn main() {
     let some_number = Some(5);
     let some_char = Some('h');
     let absent_number: Option<i32> = Option::None;
 
     dbg!(value_in_cents(Quarter(UsState::Alabama)));
-
     dbg!(plus_one(Some(1)));
+
+    let dice_roll = 9;
+
+    match dice_roll {
+        3 => add_fancy_hat(),
+        7 => remove_fancy_hat(),
+        other => move_player(other)
+    }
+
 }
